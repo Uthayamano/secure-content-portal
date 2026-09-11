@@ -139,7 +139,7 @@ export default function AdminDashboardClient() {
         setUploadFile(null);
         return;
       }
-      if (sizeMB > 20MB) {
+      if (sizeMB > 20) {
         setUploadError(`PDF size (${sizeMB.toFixed(1)}MB) exceeds the 20MB limit.`);
         setUploadFile(null);
         return;

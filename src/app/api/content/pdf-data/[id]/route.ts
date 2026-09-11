@@ -34,7 +34,7 @@ export async function GET(req: NextRequest, context: RouteContext) {
       recordView(id, session.user.email, session.user.id).catch(console.error);
     }
 
-    return new NextResponse(fileData.buffer, {
+    return new NextResponse(new Uint8Array(fileData.buffer), {
       status: 200,
       headers: {
         'Content-Type': 'application/pdf',

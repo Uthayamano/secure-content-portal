@@ -78,7 +78,7 @@ export async function GET(req: NextRequest, context: RouteContext) {
         recordView(id, session.user.email, session.user.id).catch(console.error);
       }
 
-      return new NextResponse(chunkBuffer, {
+      return new NextResponse(new Uint8Array(chunkBuffer), {
         status: 206, // Partial Content
         headers: {
           'Content-Range': `bytes ${start}-${end}/${totalSize}`,
@@ -96,7 +96,7 @@ export async function GET(req: NextRequest, context: RouteContext) {
       recordView(id, session.user.email, session.user.id).catch(console.error);
     }
 
-    return new NextResponse(buffer, {
+    return new NextResponse(new Uint8Array(buffer), {
       status: 200,
       headers: {
         'Accept-Ranges': 'bytes',

@@ -92,7 +92,7 @@ export const authOptions: NextAuthOptions = {
         const dbUser = await upsertUser({
           email,
           name: user.name || email.split('@')[0],
-          avatar_url: user.image || null,
+          avatar_url: user.image || undefined,
           role: assignedRole,
         });
 

@@ -48,13 +48,15 @@ This document tracks project milestones, architecture decisions, assumptions, an
 - [x] Commit Phase 4.
 
 ### Phase 5: Automated Testing & Verification
-- [ ] Implement automated RBAC test suite verifying:
-  - Viewer receives 403 on admin routes.
+- [x] Implement automated RBAC test suite verifying:
+  - Viewer receives 403 on admin routes (never 200).
   - Unauthenticated caller receives 401.
   - Admin receives 200 and can execute CRUD.
-  - File validation rejects invalid formats.
-- [ ] Run full build check (`npm run build`).
-- [ ] Commit Phase 5.
+  - File validation rejects invalid formats and oversized files.
+  - Private storage paths are strictly stripped from viewer models.
+- [x] Run full production build check (`npm run build`) with zero TypeScript/lint errors.
+- [x] Verified 23 passing tests in test suite.
+- [x] Commit Phase 5.
 
 ### Phase 6: Documentation & Deployment Guide
 - [ ] Write comprehensive `README.md` with:
