@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "tsx scripts/test-access-control.ts"
+    "test": "tsx scripts/test-access-control.ts",
+    "test:http": "tsx scripts/verify-live-http.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0",
