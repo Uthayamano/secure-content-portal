@@ -20,12 +20,12 @@ This document tracks project milestones, architecture decisions, assumptions, an
 - [x] Commit Phase 1.
 
 ### Phase 2: Authentication & Role-Based Access Control (RBAC)
-- [ ] Implement NextAuth.js configuration with Google Provider.
-- [ ] Implement Admin email allow-list check (`ADMIN_EMAILS`) for auto-elevating roles on first login.
-- [ ] Implement session role enrichment in JWT and session callbacks.
-- [ ] Implement server-side role assertion helpers (`requireAdminSession`, `requireViewerSession`).
-- [ ] Add seamless local development/mock authentication bypass for evaluation and automated testing.
-- [ ] Commit Phase 2.
+- [x] Implement NextAuth.js configuration with Google Provider and HttpOnly cookies.
+- [x] Implement Admin email allow-list check (`ADMIN_EMAILS`) for auto-elevating roles on first login.
+- [x] Implement session role enrichment in JWT and session callbacks (`next-auth.d.ts`).
+- [x] Implement server-side role assertion helpers (`requireAdminSession`, `requireAuthSession`).
+- [x] Add evaluation & fast persona access for instant testing of Admin vs. Viewer roles.
+- [x] Commit Phase 2.
 
 ### Phase 3: Admin Capabilities (CRUD & Upload Validation)
 - [ ] Build upload API handler with MIME type validation, file size limits (200MB video, 20MB PDF/HTML), and non-guessable storage paths.
