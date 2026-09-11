@@ -28,12 +28,12 @@ This document tracks project milestones, architecture decisions, assumptions, an
 - [x] Commit Phase 2.
 
 ### Phase 3: Admin Capabilities (CRUD & Upload Validation)
-- [ ] Build upload API handler with MIME type validation, file size limits (200MB video, 20MB PDF/HTML), and non-guessable storage paths.
-- [ ] Build edit metadata API handler (title, description, category).
-- [ ] Build delete API handler with confirmation check and storage cleanup.
-- [ ] Build Admin Dashboard UI with statistics, upload modal (drag-and-drop), metadata editor, and typed delete confirmation modal.
-- [ ] Build Admin Activity / Audit Log viewer.
-- [ ] Commit Phase 3.
+- [x] Build upload API handler with MIME type validation, file size limits (200MB video, 20MB PDF/HTML), and non-guessable storage paths.
+- [x] Build edit metadata API handler (title, description, category).
+- [x] Build delete API handler with confirmation check and storage cleanup.
+- [x] Build Admin Dashboard UI with statistics, upload modal (drag-and-drop), metadata editor, and typed delete confirmation modal.
+- [x] Build Admin Activity / Audit Log viewer.
+- [x] Commit Phase 3.
 
 ### Phase 4: Viewer Capabilities & Secure Content Protection
 - [ ] Build authenticated content list API (redacting internal storage paths).
