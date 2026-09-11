@@ -36,15 +36,16 @@ This document tracks project milestones, architecture decisions, assumptions, an
 - [x] Commit Phase 3.
 
 ### Phase 4: Viewer Capabilities & Secure Content Protection
-- [ ] Build authenticated content list API (redacting internal storage paths).
-- [ ] Build streaming proxy API route supporting HTTP Range requests (`206 Partial Content`) for video playback.
-- [ ] Build short-lived signed URL generation endpoint.
-- [ ] Build secure HTML sandboxed content endpoint.
-- [ ] Build `VideoViewer` with custom controls and watermark.
-- [ ] Build `PdfViewer` with `pdfjs-dist` canvas rendering (no raw binary exposure).
-- [ ] Build `HtmlViewer` inside `sandbox="allow-scripts"` iframe.
-- [ ] Build cosmetic deterrents: right-click disable, user-select prevention, and viewer email watermark overlay.
-- [ ] Commit Phase 4.
+- [x] Build authenticated content list API (redacting internal storage paths).
+- [x] Build streaming proxy API route supporting HTTP Range requests (`206 Partial Content`) for video playback.
+- [x] Build short-lived signed URL generation endpoint (`/api/content/signed-url/[id]`).
+- [x] Build secure HTML sandboxed content endpoint (`/api/content/html/[id]`) and PDF in-memory transfer route (`/api/content/pdf-data/[id]`).
+- [x] Build `VideoViewer` with custom controls, disabled downloads, and watermark.
+- [x] Build `PdfViewer` with `pdfjs-dist` canvas rendering (no raw binary exposure).
+- [x] Build `HtmlViewer` inside `sandbox="allow-scripts"` iframe.
+- [x] Build cosmetic deterrents: right-click disable, user-select prevention, and viewer email watermark overlay.
+- [x] Build Viewer catalog and detail views with zero admin controls.
+- [x] Commit Phase 4.
 
 ### Phase 5: Automated Testing & Verification
 - [ ] Implement automated RBAC test suite verifying:
