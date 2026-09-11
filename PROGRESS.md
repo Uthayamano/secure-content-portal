@@ -59,12 +59,12 @@ This document tracks project milestones, architecture decisions, assumptions, an
 - [x] Commit Phase 5.
 
 ### Phase 6: Documentation & Deployment Guide
-- [ ] Write comprehensive `README.md` with:
+- [x] Write comprehensive `README.md` with:
   - Architecture diagram (Mermaid).
   - Setup instructions & environment variables.
-  - Dedicated "Security Trade-offs" section.
+  - Dedicated "Security Trade-offs" section (boundaries vs. deterrents).
   - Vercel & Supabase deployment walkthrough.
-- [ ] Final commit & verification.
+- [x] Final commit & verification.
 
 ---
 
